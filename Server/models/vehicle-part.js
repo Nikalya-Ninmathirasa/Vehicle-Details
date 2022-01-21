@@ -33,6 +33,6 @@ const VehiclepartSchema = mongoose.Schema({
 });
 
 const Vehiclepart = (module.exports = mongoose.model(
-  "Vehiclepart",
+  "Vehicleparts",
   VehiclepartSchema
 ));

@@ -11,7 +11,7 @@ const route = require("./routes/route");
 
 //connect to mongodb
 mongoose.connect(
-  "mongodb+srv://nikalya:nikalya1398@cluster0.szazk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  "mongodb+srv://myapp:12345@cluster0.9n1rd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 );
 
 //on connection
