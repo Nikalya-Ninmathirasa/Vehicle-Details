@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VehiclePartsComponent } from './vehicle-part/vehicle-part.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [AppComponent, VehiclePartsComponent],
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     HttpClientModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

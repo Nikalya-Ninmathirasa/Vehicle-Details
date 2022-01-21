@@ -1,7 +1,7 @@
 export class Vehiclepart {
   partID!: String;
   partName!: String;
-  brandname!: String;
+  brandName!: String;
   price!: String;
   shelveNumber!: Number;
   availableQty!: Number;

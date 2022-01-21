@@ -11,10 +11,10 @@ export class VehiclePartService {
   constructor(private http: HttpClient) {}
 
   getVehicleParts() {
-    return this.http.get<any[]>('http://localhost:3000/api/vehicleparts');
+    return this.http.get<any[]>('http://localhost:3000/api/vehicle-part');
   }
 
   postVehicleParts(vp: Vehiclepart) {
-    return this.http.post<any>('http://localhost:3000/api/vehiclepart', vp);
+    return this.http.post<any>('http://localhost:3000/api/vehicle-part', vp);
   }
 }
