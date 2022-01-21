@@ -1,0 +1,50 @@
+<div class="form" style="text-align: center">
+  <h3>Add vehicle part</h3>
+  <br />
+  <form>
+    <label>partID</label>
+    <input type="text" name="partID" [(ngModel)]="vp.partID" /><br /><br />
+
+    <label>partName</label>
+    <input
+      type="text"
+      name="partName"
+      [(ngModel)]="vp.partName"
+    /><br /><br /><br />
+
+    <label>brandname</label>
+    <input
+      type="text"
+      name="brandname"
+      [(ngModel)]="vp.brandname"
+    /><br /><br /><br />
+
+    <label> price</label>
+    <input type="text" name=" price" [(ngModel)]="vp.price" /><br /><br /><br />
+
+    <label>shelve_number</label>
+    <input
+      type="text"
+      name="shelve_number"
+      [(ngModel)]="vp.shelveNumber"
+    /><br /><br /><br />
+
+    <label>availableQty</label>
+    <input
+      type="text"
+      name="availableQty"
+      [(ngModel)]="vp.availableQty"
+    /><br /><br /><br />
+
+    <label>purchaseDate</label>
+    <input
+      type="Date"
+      name="purchaseDate"
+      [(ngModel)]="vp.purchaseDate"
+    /><br /><br /><br />
+
+    <button name="submit" (click)="save()">Submit</button> &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <button name="cancel" (click)="save()">cancel</button>
+  </form>
+</div>
