@@ -32,6 +32,10 @@ export class AppComponent implements OnInit {
     
     this.bsModalRef = this.modalService.show(VehiclePartsComponent);
     this.bsModalRef.content.closeBtnName = 'Close';
-    
+    this.bsModalRef.content.onClose.subscribe((result: any) => { 
+      this.vpService.getVehicleParts().subscribe((resp) => {
+        this.parts = resp;
+      });
+    });
   }
 }

@@ -1,50 +1,50 @@
-<div class="form" style="text-align: center">
-  <h3>Add vehicle part</h3>
-  <br />
-  <form>
-    <label>partID</label>
-    <input type="text" name="partID" [(ngModel)]="vp.partID" /><br /><br />
+<div class="modal-header">
+  <h4 class="modal-title pull-left">Add New Vehicle Part</h4>
+  <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef?.hide()">
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form">
+    <form>
+      <div class="form-group">
+        <label class="form-label">Part Id</label>
+        <input class="form-control" type="text" name="partID" [(ngModel)]="vp.partID" />
+      </div>
 
-    <label>partName</label>
-    <input
-      type="text"
-      name="partName"
-      [(ngModel)]="vp.partName"
-    /><br /><br /><br />
+      <div class="form-group">
+        <label class="form-label">Part Name</label>
+        <input class="form-control" type="text" name="partName" [(ngModel)]="vp.partName" />
+      </div>
 
-    <label>brandname</label>
-    <input
-      type="text"
-      name="brandname"
-      [(ngModel)]="vp.brandName"
-    /><br /><br /><br />
 
-    <label> price</label>
-    <input type="text" name=" price" [(ngModel)]="vp.price" /><br /><br /><br />
+      <div class="form-group">
+        <label class="form-label">Brand Name</label>
+        <input class="form-control" type="text" name="brandName" [(ngModel)]="vp.brandName" />
+      </div>
 
-    <label>shelve_number</label>
-    <input
-      type="text"
-      name="shelve_number"
-      [(ngModel)]="vp.shelveNumber"
-    /><br /><br /><br />
+      <div class="form-group">
+        <label class="form-label">Price</label>
+        <input class="form-control" type="text" name=" price" [(ngModel)]="vp.price" />
+      </div>
 
-    <label>availableQty</label>
-    <input
-      type="text"
-      name="availableQty"
-      [(ngModel)]="vp.availableQty"
-    /><br /><br /><br />
+      <div class="form-group">
+        <label class="form-label">Shelve Number</label>
+        <input class="form-control" type="text" name="shelve_number" [(ngModel)]="vp.shelveNumber" />
+      </div>
 
-    <label>purchaseDate</label>
-    <input
-      type="Date"
-      name="purchaseDate"
-      [(ngModel)]="vp.purchaseDate"
-    /><br /><br /><br />
+      <div class="form-group">
+        <label class="form-label">Available Qty</label>
+        <input class="form-control" type="text" name="availableQty" [(ngModel)]="vp.availableQty" />
+      </div>
 
-    <button name="submit" (click)="save()">Submit</button> &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    <button name="cancel" (click)="save()">cancel</button>
-  </form>
+      <div class="form-group">
+        <label class="form-label">Purchase Date</label>
+        <input class="form-control" type="Date" name="purchaseDate" [(ngModel)]="vp.purchaseDate" />
+      </div>
+      <br>
+      <button class="btn btn-success " name="submit" (click)="save()">Submit</button>
+      <button class="btn btn-secondary mx-4" name="cancel" (click)="close()">cancel</button>
+    </form>
+  </div>
 </div>

@@ -1,35 +1,37 @@
 <h1>Details of VehicleParts</h1>
 
-<button class="btn btn-success" (click)="openCreatePartComponent()">Create New Part</button>
 
-<div style="text-align: center">
-<div>
-  <table class="table table-bordered text-center" style="width: 50%">
-    <thead>
-    <tr>
-      <th>Part Id</th>
-      <th>Part Name</th>
-      <th>Brand Name</th>
-      <th>Price</th>
-      <th>Shelve Number</th>
-      <th>Available Qty</th>
-      <th>Purchase Date</th>
-    </tr>
-    </thead>
 
-    <tr *ngFor="let part of parts">
-      <td>{{ part.partID }}</td>
-      <td>{{ part.partName }}</td>
-      <td>{{ part.brandName }}</td>
-      <td>{{ part.price }}</td>
-      <td>{{ part.shelveNumber }}</td>
-      <td>{{ part.availableQty }}</td>
-      <td>{{ part.purchaseDate }}</td>
-    </tr>
-  </table>
-
-</div>
-
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <button class="btn btn-success" (click)="openCreatePartComponent()">Create New Part</button>
+    <br>
+    <br>
+    <table class="table table-bordered" style="width: 100%">
+      <thead>
+      <tr>
+        <th>Part Id</th>
+        <th>Part Name</th>
+        <th>Brand Name</th>
+        <th>Price</th>
+        <th>Shelve Number</th>
+        <th>Available Qty</th>
+        <th>Purchase Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let part of parts">
+        <td>{{ part.partID }}</td>
+        <td>{{ part.partName }}</td>
+        <td>{{ part.brandName }}</td>
+        <td>{{ part.price }}</td>
+        <td>{{ part.shelveNumber }}</td>
+        <td>{{ part.availableQty }}</td>
+        <td>{{ part.purchaseDate | date}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 
